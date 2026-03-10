@@ -1,0 +1,43 @@
+[
+  {
+    "filename": "Image.jpg",
+    "tables": [
+      {
+        "table_id": 0,
+        "bbox": [
+                "x1",
+                "y1",
+                "x2",
+                "y2"
+        ],
+        "cells": [
+          {
+            "bbox": [
+                "x1",
+                "y1",
+                "x2",
+                "y2"
+            ],
+            "row": 0,
+            "col": 0,
+            "rowspan": 3,
+            "colspan": 1,
+            "text": "Winners"
+          },{
+            "bbox": [
+                "x1",
+                "y1",
+                "x2",
+                "y2"
+            ],
+            "row": 0,
+            "col": 0,
+            "rowspan": 1,
+            "colspan": 1,
+            "text": "7.0"
+          }
+        ]
+    }
+    ]
+  }
+]

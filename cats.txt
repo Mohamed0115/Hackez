@@ -1,0 +1,4 @@
+annotations\Cells_Anotations_coco-Phase1_TD&TSR_Train_Dataset_Extra.json ['table', 'table column', 'table row', 'table column header', 'table projected row header', 'table spanning cell']
+annotations\Cells_Anotations_coco-Phase1_TD_Train_Dataset_Extra.json ['table']
+annotations\Cells_Anotations_coco-Phase1_Train_Dataset.json ['table', 'table column', 'table row', 'table column header', 'table projected row header', 'table spanning cell']
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json ['table', 'table column', 'table row', 'table column header', 'table projected row header', 'table spanning cell', 'table cell']

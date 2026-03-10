@@ -1,0 +1,7 @@
+train: images/train
+val: images/val
+
+names:
+  0: table
+  1: table_row
+  2: table_column

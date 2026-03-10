@@ -1,0 +1,7 @@
+train: C:/Users/midob/Downloads/Hackez/train_pilot.txt
+val: C:/Users/midob/Downloads/Hackez/val_pilot.txt
+
+names:
+  0: table
+  1: table_row
+  2: table_column

@@ -1,0 +1,20 @@
+annotations\Cells_Anotations_coco-Phase1_TD&TSR_Train_Dataset_Extra.json table 1780
+annotations\Cells_Anotations_coco-Phase1_TD&TSR_Train_Dataset_Extra.json table column 8323
+annotations\Cells_Anotations_coco-Phase1_TD&TSR_Train_Dataset_Extra.json table row 20903
+annotations\Cells_Anotations_coco-Phase1_TD&TSR_Train_Dataset_Extra.json table column header 1460
+annotations\Cells_Anotations_coco-Phase1_TD&TSR_Train_Dataset_Extra.json table projected row header 1264
+annotations\Cells_Anotations_coco-Phase1_TD&TSR_Train_Dataset_Extra.json table spanning cell 3471
+annotations\Cells_Anotations_coco-Phase1_TD_Train_Dataset_Extra.json table 3758
+annotations\Cells_Anotations_coco-Phase1_Train_Dataset.json table 1791
+annotations\Cells_Anotations_coco-Phase1_Train_Dataset.json table column 8274
+annotations\Cells_Anotations_coco-Phase1_Train_Dataset.json table row 20558
+annotations\Cells_Anotations_coco-Phase1_Train_Dataset.json table column header 1453
+annotations\Cells_Anotations_coco-Phase1_Train_Dataset.json table projected row header 1207
+annotations\Cells_Anotations_coco-Phase1_Train_Dataset.json table spanning cell 3567
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json table 4000
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json table column 17613
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json table row 47883
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json table column header 3771
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json table projected row header 4554
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json table spanning cell 4846
+annotations\Cells_Anotations_coco-Phase1_TSR_Train_Dataset_Extra.json table cell 0
