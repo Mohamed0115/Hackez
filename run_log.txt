@@ -1,0 +1,61 @@
+Loading YOLO Model on CUDA... 
+Loading PaddleOCR...
+Found 500 images in C:\Users\midob\Downloads\Hackez\ocr_images.
+Resuming progress: 270 images already processed.
+[271/500] Processing test_342.jpg...
+[272/500] Processing test_343.jpg...
+[273/500] Processing test_344.jpg...
+[274/500] Processing test_345.jpg...
+[275/500] Processing test_346.jpg...
+[276/500] Processing test_347.jpg...
+Traceback (most recent call last):
+  File "C:\Users\midob\Downloads\Hackez\generate_submission_phase2.py", line 203, in <module>
+    main()
+  File "C:\Users\midob\Downloads\Hackez\generate_submission_phase2.py", line 145, in main
+    results = model.predict(img_path, imgsz=IMGSZ, conf=CONF_THRESH, iou=IOU_THRESH, device=device_str, verbose=False)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\engine\model.py", line 536, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\engine\predictor.py", line 225, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Results into one
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\utils\_contextlib.py", line 40, in generator_context
+    response = gen.send(None)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\engine\predictor.py", line 330, in stream_inference
+    preds = self.inference(im, *args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\engine\predictor.py", line 182, in inference
+    return self.model(im, augment=self.args.augment, visualize=visualize, embed=self.args.embed, *args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\nn\autobackend.py", line 717, in forward
+    y = self.model(im, augment=augment, visualize=visualize, embed=embed, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\nn\tasks.py", line 142, in forward
+    return self.predict(x, *args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\nn\tasks.py", line 159, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\nn\tasks.py", line 181, in _predict_once
+    x = m(x)  # run
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\nn\modules\block.py", line 235, in forward
+    y.extend(self.m(y[-1]) for _ in range(getattr(self, "n", 3)))
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\ultralytics\nn\modules\block.py", line 235, in <genexpr>
+    y.extend(self.m(y[-1]) for _ in range(getattr(self, "n", 3)))
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1776, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\module.py", line 1787, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\modules\pooling.py", line 224, in forward
+    return F.max_pool2d(
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\_jit_internal.py", line 619, in fn
+    return if_false(*args, **kwargs)
+  File "C:\Users\midob\anaconda3\envs\phase2_env\lib\site-packages\torch\nn\functional.py", line 833, in _max_pool2d
+    return torch.max_pool2d(input, kernel_size, stride, padding, dilation, ceil_mode)
+KeyboardInterrupt
+^C

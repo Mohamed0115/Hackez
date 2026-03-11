@@ -70,8 +70,8 @@ def extract_cells_and_ocr(table_bbox, rows, columns, img, ocr_model):
                 crop_img = img[crop_y1:crop_y2, crop_x1:crop_x2]
                 text_result = ""
                 
-                # Only OCR if the crop is valid geometry
-                if crop_img.size > 0:
+                # Only OCR if the crop is valid geometry and has reasonable dimensions
+                if crop_img.shape[0] >= 5 and crop_img.shape[1] >= 5:
                     ocr_res = ocr_model.ocr(crop_img, cls=False)
                     # PaddleOCR returns nested lists. Extract text carefully.
                     # Safety net to avoid empty cell crash
@@ -110,9 +110,24 @@ def main():
         print("WARNING: No images found. Check the path!")
     
     submission_data = []
+    processed_files = set()
+    if os.path.exists(OUTPUT_JSON):
+        try:
+            with open(OUTPUT_JSON, 'r', encoding='utf-8') as f:
+                submission_data = json.load(f)
+            processed_files = {entry['filename'] for entry in submission_data}
+            print(f"Resuming progress: {len(processed_files)} images already processed.")
+        except Exception as e:
+            print(f"Could not load previous JSON, starting fresh. {e}")
+            submission_data = []
     
     for idx, img_path in enumerate(image_paths):
         filename = os.path.basename(img_path)
+        
+        if filename in processed_files:
+            # Skip already processed images
+            continue
+            
         print(f"[{idx+1}/{len(image_paths)}] Processing {filename}...")
         
         entry = {
